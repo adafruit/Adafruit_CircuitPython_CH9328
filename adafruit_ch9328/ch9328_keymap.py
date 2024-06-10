@@ -26,7 +26,7 @@ Implementation Notes
 """
 
 
-# pylint: disable=too-few-public-methods
+# pylint: disable=too-few-public-methods, invalid-name
 class Keymap:
     """Keymap for the Adafruit CH9328 UART to HID keyboard driver"""
 
