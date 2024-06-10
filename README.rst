@@ -92,6 +92,7 @@ Usage Example
 =============
 
 .. code-block:: python
+
     import board
     import busio
     import time
