@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 """
-`adafruit_ch9328.ch9328_keymap.Keymap`
+:py:class:`~adafruit_ch9328.ch9328_keymap.Keymap`
 ================================================================================
 
 HID Keymap for the CH9328 UART to HID keyboard breakout
