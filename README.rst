@@ -96,7 +96,7 @@ Usage Example
     import busio
     import time
     from adafruit_ch9328.ch9328 import Adafruit_CH9328
-    from adafruit_ch9328.ch9328_keymap import *
+    from adafruit_ch9328.ch9328_keymap import Keymap
 
     # Initialize UART for the CH9328
     uart = busio.UART(board.TX, board.RX, baudrate=9600)
