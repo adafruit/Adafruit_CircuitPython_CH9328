@@ -24,8 +24,7 @@ Table of Contents
 .. toctree::
     :caption: Tutorials
 
-.. todo:: Add any Learn guide links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+Learn Guide <https://learn.adafruit.com/adafruit-ch9328-uart-to-hid-keyboard-breakout>
 
 .. toctree::
     :caption: Related Products
