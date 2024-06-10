@@ -50,7 +50,6 @@ class Adafruit_CH9328:
         Args:
             keys (list): List of up to 6 key codes to be pressed simultaneously.
             modifier (int, optional): Modifier key code (e.g., Shift, Ctrl)
-            to be applied with the key presses.
         """
         # Ensure keys has exactly 6 elements
         keys = keys + [0x00] * (6 - len(keys))
