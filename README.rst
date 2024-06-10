@@ -106,7 +106,7 @@ Usage Example
     ch9328.send_string("Hello World!")
 
     # Send the backspace key 12 times to erase the string
-    keys = [KEY_BACKSPACE, 0, 0, 0, 0, 0]  # Keycode for backspace in US mapping
+    keys = [Keymap.BACKSPACE, 0, 0, 0, 0, 0]  # Keycode for backspace in US mapping
     no_keys_pressed = [0, 0, 0, 0, 0, 0]
     for _ in range(12):
         ch9328.send_key_press(keys, 0)  # Press
