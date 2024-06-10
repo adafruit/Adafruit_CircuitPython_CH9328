@@ -24,7 +24,7 @@ Implementation Notes
 
 """
 
-from ch9328_keymap import Keymap
+from adafruit_ch9328.ch9328_keymap import Keymap
 
 try:
     import typing  # pylint: disable=unused-import
