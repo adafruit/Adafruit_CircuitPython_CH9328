@@ -2,26 +2,12 @@
 #
 # SPDX-License-Identifier: MIT
 """
-:py:class:`~adafruit_ch9328.ch9328_keymap.Keymap`
+`adafruit_ch9328.ch9328_keymap.Keymap`
 ================================================================================
 
-CircuitPython driver for the CH9328 UART to HID keyboard breakout
-
+HID Keymap for the CH9328 UART to HID keyboard breakout
 
 * Author(s): Liz Clark
-
-Implementation Notes
---------------------
-
-**Hardware:**
-
-.. todo:: Add links to any specific hardware product page(s), or category page(s).
-  Use unordered list & hyperlink rST inline format: "* `Link Text <url>`_"
-
-**Software and Dependencies:**
-
-* Adafruit CircuitPython firmware for the supported boards:
-  https://circuitpython.org/downloads
 
 """
 

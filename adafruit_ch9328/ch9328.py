@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 """
-:py:class:`~adafruit_ch9328.ch9328.Adafruit_CH9328`
+`adafruit_ch9328.ch9328.Adafruit_CH9328`
 ================================================================================
 
 CircuitPython driver for the CH9328 UART to HID keyboard breakout
