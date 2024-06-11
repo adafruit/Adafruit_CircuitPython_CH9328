@@ -6,12 +6,19 @@
 
 import time
 import board
-import busio
 from adafruit_ch9328.ch9328 import Adafruit_CH9328
 from adafruit_ch9328.ch9328_keymap import Keymap
 
 # Initialize UART for the CH9328
-uart = busio.UART(board.TX, board.RX, baudrate=9600)
+# check for Raspberry Pi
+# pylint: disable=simplifiable-condition
+if "CE0" and "CE1" in dir(board):
+    import serial
+    uart = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=3000)
+# otherwise use busio
+else:
+    import busio
+    uart = busio.UART(board.TX, board.RX, baudrate=9600)
 ch9328 = Adafruit_CH9328(uart)
 
 # Wait for 2 seconds
