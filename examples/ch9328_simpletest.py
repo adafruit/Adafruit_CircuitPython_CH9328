@@ -14,10 +14,12 @@ from adafruit_ch9328.ch9328_keymap import Keymap
 # pylint: disable=simplifiable-condition
 if "CE0" and "CE1" in dir(board):
     import serial
+
     uart = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=3000)
 # otherwise use busio
 else:
     import busio
+
     uart = busio.UART(board.TX, board.RX, baudrate=9600)
 ch9328 = Adafruit_CH9328(uart)
 
