@@ -12,7 +12,6 @@ HID Keymap for the CH9328 UART to HID keyboard breakout
 """
 
 
-# pylint: disable=too-few-public-methods, invalid-name
 class Keymap:
     """Keymap for the Adafruit CH9328 UART to HID keyboard driver"""
 
