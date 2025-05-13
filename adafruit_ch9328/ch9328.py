@@ -27,7 +27,8 @@ Implementation Notes
 from adafruit_ch9328.ch9328_keymap import Keymap
 
 try:
-    import typing  # pylint: disable=unused-import
+    import typing
+
     from busio import UART
 except ImportError:
     pass
@@ -148,6 +149,4 @@ class Adafruit_CH9328:
             "?": Keymap.SLASH,  # Shift is handled by get_modifier
             "`": Keymap.TILDE,
             "~": Keymap.TILDE,  # Shift is handled by get_modifier
-        }.get(
-            char, 0
-        )  # Return 0 if no valid keycode
+        }.get(char, 0)  # Return 0 if no valid keycode

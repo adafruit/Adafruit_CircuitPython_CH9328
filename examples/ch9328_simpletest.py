@@ -5,13 +5,14 @@
 """Simple demo to type "Hello World!" and then delete it"""
 
 import time
+
 import board
+
 from adafruit_ch9328.ch9328 import Adafruit_CH9328
 from adafruit_ch9328.ch9328_keymap import Keymap
 
 # Initialize UART for the CH9328
 # check for Raspberry Pi
-# pylint: disable=simplifiable-condition
 if "CE0" and "CE1" in dir(board):
     import serial
 
