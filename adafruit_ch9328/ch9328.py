@@ -53,7 +53,7 @@ class Adafruit_CH9328:
             modifier (int, optional): Modifier key code (e.g., Shift, Ctrl)
         """
         # Ensure keys has exactly 6 elements
-        keys = keys + [0x00] * (6 - len(keys))
+        keys += [0x00] * (6 - len(keys))
         data_packet = bytearray([modifier, 0x00] + keys[:6])
         self._write_command(data_packet)
 
